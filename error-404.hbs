@@ -30,27 +30,12 @@ It's a good idea to keep this template as minimal as possible in terms of both f
 
         <main id="site-main" class="site-main outer" role="main">
             <div class="inner">
-
                 <section class="error-message">
-                    <h1 class="error-code">{{code}}</h1>
-                    <p class="error-description">{{message}}</p>
-                    <a class="error-link" href="{{@blog.url}}">Go to the front page →</a>
+                    <h1>Нет такой страницы</h1>
+                    <a class="error-link" href="{{@blog.url}}">Попробовать снова на главной</a>
                 </section>
             </div>
         </main>
-
-        {{#get "posts" limit="3"}}
-        <aside class="outer">
-            <div class="inner">
-                <div class="post-feed">
-                    {{#foreach posts}}
-                        {{> "post-card"}}
-                    {{/foreach}}
-                </div>
-            </div>
-        </aside>
-        {{/get}}
-
     </div>
 </body>
 </html>
